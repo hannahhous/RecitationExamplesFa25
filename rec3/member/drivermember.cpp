@@ -1,0 +1,39 @@
+// drivermember.cpp
+// Test the Add and Equals functions
+
+#include <iostream>		// for cout
+#include "fracmember.h"		// for Fraction declarations
+
+using namespace std;
+
+int main()
+{
+   Fraction f1, f2, f3, f4;
+   cout << "Enter fraction f1: ";
+   f1.Input();
+   cout << "Enter fraction f2: ";
+   f2.Input();
+   
+   cout << "\nf1 = ";
+   f1.Show();
+   cout << "\nf2 = ";
+   f2.Show();
+
+   cout << "\n\n";
+
+   if (f1.Equals(f2))
+	cout << "f1 and f2 are equal\n";
+   else
+	cout << "f1 and f2 are NOT equal\n";
+
+   f3 = f1.Add(f2);
+   cout << "f1 + f2 = ";
+   f3.Show();
+   cout << '\n';
+
+f4 = f2.Multiply(f3);
+
+
+
+   return 0;
+}
