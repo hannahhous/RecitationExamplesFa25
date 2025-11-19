@@ -176,7 +176,6 @@ class Animal
            }
   };
 
-  Dog d;
   d.speak()
 
       //woof
